@@ -1,0 +1,45 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: antiquewhite;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+}
+h1 {
+  text-transform: capitalize;
+}
+img {
+  height: 16rem;
+  width: 20rem;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+/* mobile screen size */
+@media (min-width: 320px) and (max-width: 768px) {
+  main {
+    background-color: aqua;
+  }
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+  img {
+    height: 20rem;
+  }
+}
+@media (min-width: 796px) and (max-width: 1200px) {
+  main {
+    background-color: red;
+  }
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+  img {
+    height: 25rem;
+  }
+}
